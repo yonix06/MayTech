@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "lint": "eslint . --max-warnings 0",
-    "start": "next start"
+    "build": "nx next:build",
+    "dev": "nx next:dev",
+    "lint": "nx eslint:lint --max-warnings 0",
+    "start": "nx next:start"
   },
   "dependencies": {
     "next": "^14.1.1",
