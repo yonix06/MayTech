@@ -32,6 +32,15 @@
     },
     "dev": {
       "cache": true
+    },
+    "@nx/eslint:lint": {
+      "cache": true,
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/.eslintignore",
+        "{workspaceRoot}/eslint.config.js"
+      ]
     }
   },
   "defaultBase": "main",
@@ -58,5 +67,15 @@
       }
     }
   ],
-  "nxCloudAccessToken": "N2NiOTI3YjYtZGFlZC00MTA2LWFiMWMtZWY1NTM3NmQ4MWRlfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "N2NiOTI3YjYtZGFlZC00MTA2LWFiMWMtZWY1NTM3NmQ4MWRlfHJlYWQtd3JpdGU=",
+  "namedInputs": {
+    "sharedGlobals": [
+      "{workspaceRoot}/.github/workflows/ci-nx.yml"
+    ]
+  },
+  "generators": {
+    "@nx/react": {
+      "library": {}
+    }
+  }
 }

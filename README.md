@@ -1,6 +1,6 @@
 # Turborepo Docker starter
 
-This is an official Docker starter Turborepo.
+This is an official Docker starter Turborepo with NX installed and configured.
 
 ## Using this example
 
@@ -10,9 +10,18 @@ Run the following command:
 npx create-turbo@latest -e with-docker
 ```
 
+## Using NX
+
+To run NX commands, use the following:
+
+```sh
+nx <command>
+```
+
 ## What's inside?
 
 This Turborepo includes the following:
+
 
 ### Apps and Packages
 
@@ -27,6 +36,7 @@ This Turborepo includes the following:
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Docker
+
 
 This repo is configured to be built with Docker, and Docker compose. To build all apps in this repo:
 
@@ -52,6 +62,20 @@ To shutdown all running containers:
 ```
 # Stop all running containers
 docker kill $(docker ps -q) && docker rm $(docker ps -a -q)
+```
+
+### Tilt
+
+To use Tilt, install it globally:
+
+```sh
+npm install -g tilt
+```
+
+Then, run the following command to start Tilt:
+
+```sh
+tilt up
 ```
 
 ### Remote Caching
